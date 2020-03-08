@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+    flask:
+        build: ./flask
+        networks: 
+            - ec2-network
+    nginx:
+        build: ./nginx
+        ports: 
+            - "80:80"
+        networks: 
+            - ec2-network
+
+networks: 
+    ec2-network:
+
