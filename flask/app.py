@@ -4,4 +4,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def counter():
-    return "Is this reallasfdasdfasdfasfy working"
+    return "It works every minute!"
