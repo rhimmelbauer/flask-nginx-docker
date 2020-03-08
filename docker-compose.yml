@@ -5,6 +5,8 @@ services:
         build: ./flask
         networks: 
             - ec2-network
+        volumes: 
+            - /home/ec2-user/flask-nginx-docker:/webapp
     nginx:
         build: ./nginx
         ports: 
